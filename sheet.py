@@ -41,7 +41,7 @@ def make_body(*, range, id, name, bid, offer):
     return {
         "range": range,
         "majorDimension": "ROWS",
-        "values": [[id, name, bid, offer, now.strftime("%H:%M:%S") ]],
+        "values": [[id, name, bid, offer, now.strftime("%H:%M:%S")]],
     }
 
 
@@ -95,6 +95,7 @@ def update(*, id, bid, offer):
             )
             .execute()
         )
+
 
 if __name__ == "__main__":
     update(id=1511, bid=234, offer=234)
