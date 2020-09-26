@@ -49,7 +49,7 @@ def update(*, id, bid, offer):
     sheet = service.spreadsheets()
     result = (
         sheet.values()
-        .get(spreadsheetId=SPREADSHEET_ID, range="SHEET1!A1:A50")
+        .get(spreadsheetId=SPREADSHEET_ID, range="SHEET1!A1:A1000")
         .execute()
     )
 
